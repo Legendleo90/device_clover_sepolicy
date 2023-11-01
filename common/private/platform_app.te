@@ -9,3 +9,6 @@ hal_client_domain(platform_app, hal_lineage_powershare)
 
 # Launcher apps read pm.archiving.enabled
 get_prop(platform_app, pm_archiving_enabled_prop)
+
+# Allow systemui to read audio properties for shutter sound adjustment
+get_prop(platform_app, audio_config_prop)
